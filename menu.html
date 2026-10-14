@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Uncle Bro's</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <style>
+        
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: whitesmoke;
+            color: black;
+            
+        }
+
+
+        .menu {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .coffee {
+            background-color: whitesmoke;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+           
+        }
+
+        .coffee img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+           
+        }
+
+        .coffee h2 {
+            margin: 10px 0 5px;
+        }
+
+        
+
+        .price {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+
+
+    .coffee button {
+    margin-top: 12px;
+    padding: 10px 25px;
+    background-color: #3b281c;
+    color: white;
+    border: none;
+    cursor: pointer;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.coffee button:hover {
+    background-color: #3b281c;
+    color: black;
+    transform: scale(1.10);
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.back-button:hover {
+    background-color: black;
+    transform: scale(1.10);
+     
+}
+
+ .container {
+            width: 80%;
+            max-width: 700px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+          label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+    label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 7px;
+            box-sizing: border-box;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        .buy-button {
+            display: block;
+            text-align: center;
+            background-color: #4b2e20;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            margin-top: 25px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .buy-button:hover {
+            background-color: #2b1a12;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+         <a href="index.html" class="back-button">← Return</a>
+
+         <center><h2>Coffee To Go</h2></center>
+
+    <div class="menu">
+
+        <div class="coffee">
+            <img src="Espresso.png" alt="Espresso">
+            <h2>Espresso</h2>
+            <div class="price">₱80</div>
+            </a>
+        </div>
+
+        <div class="coffee">
+            <img src="Americano.png" alt="Americano">
+            <h2>Americano</h2>
+            <div class="price">₱90</div>
+            </a>
+
+        </div>
+
+        <div class="coffee">
+            <img src="Caffe Latte.png" alt="Latte">
+            <h2>Latte</h2>
+            <div class="price">₱110</div>
+            </a>
+        </div>
+
+        <div class="coffee">
+            <img src="Cappuccino.png" alt="Cappuccino">
+            <h2>Cappuccino</h2>
+            <div class="price">₱110</div>
+            </a>
+        </div>
+
+        <div class="coffee">
+            <img src="Mocha.png" alt="Mocha">
+            <h2>Mocha</h2>
+            <div class="price">₱120</div>
+            </a>
+        </div>
+
+        <div class="coffee">
+            <img src="Cold Brew.png" alt="Cold Brew">
+            <h2>Cold Brew</h2>
+            <div class="price">₱120</div>
+            </a>
+        </div>
+
+    </div>
+
+ <div class="container">
+
+        <div class="product">
+
+
+            <h2>Buy Coffee</h2>
+            <br>
+
+            <p>
+                 <h2>Customer Information</h2>
+
+            </p>
+
+
+        </div>
+
+       
+        <form>
+
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Select Coffee</label>
+            <select>
+                <option>Select Coffee</option>
+                <option>Espresso</option>
+                <option>Americano</option>
+                <option>Latte</option>
+                <option>Cappuccino</option>
+                <option>Mocha</option>
+                <option>Cold Brew</option>
+            </select>
+
+            <label>Quantity</label>
+            <input type="number" min="1" value="1">
+
+            <label>Payment Method</label>
+            <select>
+                <option>Select Payment Method</option>
+                <option>Cash on Delivery</option>
+                <option>GCash</option>
+                <option>Bank Transfer</option>
+            </select>
+
+            <a href="" class="buy-button">
+                Buy Now
+            </a>
+
+        </form>
+
+    </div>
+
+   
+
+</body>
+</html>
